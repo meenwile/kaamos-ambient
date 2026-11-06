@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaamos Ambient uploader</title>
+  <meta name="description" content="Kaamos Ambient uploader is a desktop app used only by the channel owner to upload videos to the Kaamos Ambient YouTube channel.">
+  <style>
+    :root {
+      --bg: #12181f;
+      --text: #e8e4db;
+      --muted: #b7c0c8;
+      --accent: #e0c98a;
+      --line: #2c3946;
+      --link: #e0c98a;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--bg); color: var(--text); }
+    body {
+      margin: 0;
+      font-family: Georgia, "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+      font-size: 1.125rem;
+      line-height: 1.65;
+    }
+    a { color: var(--link); }
+    a:hover { color: #f3e6c4; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .wrap {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.4rem 4rem;
+    }
+    nav {
+      font-family: system-ui, "Segoe UI", sans-serif;
+      font-size: 0.92rem;
+      margin-bottom: 2.5rem;
+    }
+    nav a { margin-right: 1.1rem; }
+    .kicker {
+      font-family: system-ui, "Segoe UI", sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 0.7rem;
+    }
+    h1 {
+      font-weight: 500;
+      font-size: 2.35rem;
+      line-height: 1.15;
+      margin: 0 0 1rem;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 1.35rem;
+      margin: 2.2rem 0 0.55rem;
+    }
+    p { margin: 0.75rem 0; }
+    .lede { font-size: 1.22rem; }
+    ul { margin: 0.6rem 0 0; padding-left: 1.2rem; }
+    li { margin: 0.45rem 0; }
+    .scope {
+      font-family: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+      font-size: 0.92rem;
+      word-break: break-all;
+    }
+    footer {
+      margin-top: 2.8rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: system-ui, "Segoe UI", sans-serif;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a href="https://meenwile.github.io/kaamos-ambient/" aria-current="page">Home</a>
+      <a href="https://meenwile.github.io/kaamos-ambient/privacy.html">Privacy policy</a>
+    </nav>
+
+    <p class="kicker">Personal desktop app</p>
+    <h1>Kaamos Ambient uploader</h1>
+    <p class="lede">Kaamos Ambient uploader is a desktop application used only by the owner of the Kaamos Ambient YouTube channel. It uploads videos to that channel: long ambient soundscapes and slow music painted from Finnish winter nights.</p>
+    <p>This is not a public product. It is not offered to other users. This website has no sign-in. It only describes the app and how it handles Google user data.</p>
+
+    <h2>What the app does</h2>
+    <p>The app runs on the channel owner’s own computer. Its only job is to publish videos the owner chooses:</p>
+    <ul>
+      <li>It signs in with the owner’s Google account.</li>
+      <li>It uploads a video file from that computer to the Kaamos Ambient YouTube channel.</li>
+      <li>It can set a custom thumbnail on that upload.</li>
+      <li>It keeps a refresh token on that private computer so later uploads can be published from the same machine.</li>
+    </ul>
+
+    <h2>Why it requests Google data</h2>
+    <p>The app requests only this OAuth scope:</p>
+    <p class="scope">https://www.googleapis.com/auth/youtube.upload</p>
+    <p>That scope is used to upload videos and set custom thumbnails on the owner’s YouTube channel. The app cannot read Gmail, Google Drive, Google Calendar, or other Google data. It cannot delete videos or change channel settings.</p>
+    <p>Google user data is not sold and is not shared with third parties. The video the owner chooses to publish is sent to YouTube so it can appear on the owner’s channel. A full account of access, use, storage, and sharing is in the <a href="https://meenwile.github.io/kaamos-ambient/privacy.html">privacy policy</a>.</p>
+
+    <h2>Who uses it</h2>
+    <p>Only the channel owner, Ville Nores, uses Kaamos Ambient uploader. There is no public signup and no multi-user service.</p>
+    <p>By using the app, the owner agrees to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. The app uses YouTube API Services and is also covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about the app or this site: <a href="mailto:meenwile@gmail.com">meenwile@gmail.com</a></p>
+
+    <footer>
+      <p><a href="https://meenwile.github.io/kaamos-ambient/privacy.html">Privacy policy</a></p>
+      <p>Kaamos Ambient uploader · Ville Nores · <a href="mailto:meenwile@gmail.com">meenwile@gmail.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
